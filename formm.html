@@ -1,0 +1,81 @@
+<html>
+	<head>
+		<title>form</title>
+	</head>
+<body>
+	<article id="contact">
+	<form action ="https://www.bing.com/"method="get">
+	<fieldset>
+	<legend>personal info</legend>
+	<p>
+	<label for ="first name">first name</label>
+	<input type="text" name="first name" id="first name" placeholder="firstname" 
+	auto complete="on" required>
+	</p>
+	<p>
+	<label for ="last name">last name</label>
+	<input type="text" name="last name" id="last name" placeholder="last name" 
+	auto complete="on" required>
+	</p>
+	<p>
+		<label for="password">password</label>
+		<input type="password" name="password"
+		id="password" placeholder="enter password" required>
+	</p>
+	<p>
+	<label for ="fav decade">fav decade</label>
+	<input type="number" name="fav decade" id="fav decade" min="1950" max="2020"
+		value="1980" step="10" required>
+	</p>
+	<p>
+	<label for ="phone">phone</label>
+	<input type="tel" name="phone" id="phone" placeholder="9999999999" 
+	 required pattern="[0-9]{3}[0-9]{3}[0-9]{4}">
+	</fieldset>
+	</p>
+	<fieldset>
+	<legend>code information:as</legend>
+	  <p>
+	<label for ="code">code</label>
+	<select name="code" id="code">
+   	 <optgroup label="script">
+	<option value="html">html</option>
+	<option value="css">css</option>
+	<option value="js">js</option>
+	</optgroup>
+	 	<optgroup label="coding">
+			<option value="java">java</option>
+			<option value="phython">phython</option>
+		</optgroup>
+</select>
+		</p>
+	<p>
+	<label for="code">code multiple:</label>
+	<select name="code" id="code"multiple size="5">
+	 <optgroup label="script">
+	<option value="html">html</option>
+	<option value="css">css</option>
+	<option value="js">js</option>
+	</optgroup>
+	<optgroup label="coding">
+	<option value="java" selected>java</option>
+	<option value="phython">phython</option>
+	</optgroup>
+</select>
+	</p>
+	<p>
+	<label for="code">code easy:</label>
+		<input type="text"  name="content"  id="content" list="content-list">
+	<datalist id="content-list">
+	<option value="html"> 
+	<option value="css"> 
+	<option value="js"> 
+	<option value="java"> 
+	<option value="phython"> 
+	</p>
+	</fieldset>
+	<button type="submit">submit</button>
+</form>
+
+</body>
+</html>
